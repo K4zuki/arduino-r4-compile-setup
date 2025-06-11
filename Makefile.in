@@ -1,0 +1,2 @@
+SKETCH := sketch2
+BUILD_PATH := build
