@@ -32,3 +32,6 @@
 *.app
 *.hex
 *.bin
+*.elf
+
+build/
