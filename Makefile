@@ -18,6 +18,7 @@ docker:
 
 initdir:
 	mkdir -p $(SKETCH_STORAGE)
+	mkdir -p $(BUILD_PATH)
 
 new: initdir
 	$(DOCKER) sketch new $(SKETCH_STORAGE)/$(SKETCH)
@@ -27,5 +28,8 @@ attach: new
 
 init: attach
 
-firmware:
+firmware: initdir
 	$(DOCKER) compile --verbose --build-path $(BUILD_PATH) --fqbn $(BOARD) $(SKETCH_STORAGE)/$(SKETCH)
+
+clean: initdir
+	rm -rf $(BUILD_PATH)
