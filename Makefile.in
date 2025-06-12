@@ -1,2 +1,2 @@
-SKETCH := sketch2
+SKETCH := sketch_1
 BUILD_PATH := build

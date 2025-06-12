@@ -7,7 +7,7 @@ DOCKER := docker run --rm -v $(PWD):/arduino $(IMAGE)
 BOARD:=arduino:renesas_uno:minima
 
 # -*-*-*- User variables defaults -*-*-*-*-
-SKETCH:=sketch1
+SKETCH:=sketch_1
 BUILD_PATH:=build
 
 # -*-*-*- User variables override -*-*-*-*-
