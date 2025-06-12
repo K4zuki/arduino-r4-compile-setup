@@ -32,4 +32,4 @@ firmware: initdir
 	$(DOCKER) compile --verbose --build-path $(BUILD_PATH) --fqbn $(BOARD) $(SKETCH_STORAGE)/$(SKETCH)
 
 clean: initdir
-	rm -rf $(BUILD_PATH)
+	rm -rf $(BUILD_PATH)/*
