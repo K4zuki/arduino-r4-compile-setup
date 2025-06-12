@@ -21,4 +21,5 @@ jobs:
         if: github.event_name == 'push'
         run: |
           make docker
+          make init
           make firmware
